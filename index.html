@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Nike: история компании</title>
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;700&family=Onest:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#F1F0EC;--ink:#17181C;--mute:#5E6068;--line:#CFCEC8;--acc:#F2480A;--on:#fff;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#1A1B1F;--ink:#F1F0EC;--mute:#A3A5AD;--line:#33353C;--acc:#FF6A33}}
+:root[data-theme="dark"]{--bg:#1A1B1F;--ink:#F1F0EC;--mute:#A3A5AD;--line:#33353C;--acc:#FF6A33}
+html{scroll-padding-top:env(safe-area-inset-top,0px);scroll-behavior:smooth}
+*,*::before,*::after{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 17px/1.6 Onest,system-ui,sans-serif}
+a{color:inherit}a:focus-visible{outline:3px solid var(--acc);outline-offset:3px}
+.wrap{max-width:1000px;margin:0 auto;padding:0 22px}
+nav{display:flex;justify-content:space-between;padding:22px 0;font-weight:500}
+nav a{text-decoration:none;margin-left:20px}
+h1{font:700 clamp(3.4rem,19vw,13rem)/.85 Oswald,Onest,sans-serif;text-transform:uppercase;letter-spacing:-.01em;margin:7vh 0 24px}
+h1 span{display:block;color:var(--acc);font-size:.34em;letter-spacing:.01em;margin-top:.25em}
+.lead{max-width:44ch;font-size:1.2rem;color:var(--mute);margin:0}
+h2{font:700 clamp(1.8rem,5vw,2.8rem)/1.05 Oswald,Onest,sans-serif;text-transform:uppercase;margin:0 0 30px}
+section{padding:13vh 0 0}
+.tl{border-left:3px solid var(--acc);margin-left:6px}
+.ev{padding:0 0 30px 24px;position:relative;display:grid;grid-template-columns:90px 1fr;gap:6px 14px}
+.ev::before{content:"";position:absolute;left:-10px;top:9px;width:17px;height:17px;border-radius:50%;background:var(--bg);border:3px solid var(--acc)}
+.ev b{font:700 1.6rem/1.2 Oswald,sans-serif;color:var(--acc)}
+.ev p{margin:0;max-width:56ch}
+.cols{display:grid;grid-template-columns:repeat(3,1fr);gap:0;border-top:1px solid var(--line)}
+.col{padding:22px 22px 22px 0;border-bottom:1px solid var(--line)}
+.col h3{font:700 1.5rem/1.1 Oswald,sans-serif;text-transform:uppercase;margin:0 0 8px}
+.col p{margin:0;color:var(--mute)}
+.q{font:700 clamp(2.4rem,9vw,6rem)/.95 Oswald,sans-serif;text-transform:uppercase;margin:0}
+.q em{font-style:normal;color:var(--acc)}
+.note{max-width:50ch;color:var(--mute);margin:18px 0 0}
+footer{margin-top:13vh;border-top:1px solid var(--line);padding:22px 0;color:var(--mute);font-size:.88rem}
+@media (max-width:700px){.cols{grid-template-columns:1fr}.ev{grid-template-columns:1fr}}
+@media (prefers-reduced-motion:reduce){*{scroll-behavior:auto!important}}
+</style>
+</head>
+<body>
+<div class="wrap">
+<nav><a href="#top" style="margin:0">Nike</a><div><a href="#history">История</a><a href="#brands">Бренды</a><a href="#name">Название</a></div></nav>
+<header id="top">
+<h1>Nike<span>Путь к победе</span></h1>
+<p class="lead">Американская компания, которая выросла из небольшого дистрибьютора беговой обуви в одного из крупнейших производителей спортивной одежды и экипировки в мире.</p>
+</header>
+
+<section id="history">
+<h2>Ключевые даты</h2>
+<div class="tl">
+<div class="ev"><b>1964</b><p>Фил Найт и тренер Билл Бауэрман основывают Blue Ribbon Sports и начинают продавать в США кроссовки японской марки Onitsuka Tiger.</p></div>
+<div class="ev"><b>1971</b><p>Компания выбирает имя Nike. Студентка-дизайнер Кэролин Дэвидсон рисует знак Swoosh, за работу ей платят 35 долларов.</p></div>
+<div class="ev"><b>1984</b><p>Появляется линия Air Jordan, созданная вместе с баскетболистом Майклом Джорданом.</p></div>
+<div class="ev"><b>1987</b><p>Выходит Air Max с видимой воздушной камерой в подошве.</p></div>
+<div class="ev"><b>1988</b><p>Запускается рекламный слоган Just Do It, который остаётся главным девизом бренда.</p></div>
+</div>
+</section>
+
+<section id="brands">
+<h2>Чем занимается</h2>
+<div class="cols">
+<div class="col"><h3>Обувь</h3><p>Беговая, баскетбольная, футбольная и повседневная. Именно с кроссовок всё началось.</p></div>
+<div class="col"><h3>Одежда</h3><p>Спортивная и повседневная одежда для тренировок, командных видов спорта и города.</p></div>
+<div class="col"><h3>Экипировка</h3><p>Мячи, рюкзаки, аксессуары и снаряжение для разных видов спорта.</p></div>
+</div>
+<p class="note">Под крылом Nike также работают бренды Jordan и Converse.</p>
+</section>
+
+<section id="name">
+<h2>Откуда имя</h2>
+<p class="q">Ника — <em>богиня победы</em></p>
+<p class="note">Название взято из древнегреческой мифологии: Ника олицетворяла победу. Для спортивной компании выбор оказался очень точным.</p>
+</section>
+
+<footer>Неофициальный информационный сайт. Nike, Swoosh и Just Do It — товарные знаки Nike, Inc. Для актуальных данных смотрите nike.com.</footer>
+</div>
+</body>
+</html>
